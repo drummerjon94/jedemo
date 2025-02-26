@@ -6,7 +6,7 @@ document.getElementById('certificateForm').addEventListener('submit', function (
   const message = document.getElementById('message').value;
 
   // Update certificate content
-  document.getElementById('certificateName').textContent = `This certificate is awarded to ${name}`;
+  document.getElementById('certificateName').textContent = `This certificate of thanks is awarded to ${name}`;
   document.getElementById('certificateMessage').textContent = message;
 
   // Show the certificate
