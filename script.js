@@ -12,15 +12,3 @@ document.getElementById('certificateForm').addEventListener('submit', function (
   // Show the certificate
   document.getElementById('certificate').classList.remove('hidden');
 });
-
-document.getElementById('downloadBtn').addEventListener('click', function () {
-  const certificate = document.getElementById('certificate');
-
-  // Use html2canvas to convert the certificate to an image
-  html2canvas(certificate).then(canvas => {
-    const link = document.createElement('a');
-    link.download = 'certificate.jpg';
-    link.href = canvas.toDataURL('image/jpeg');
-    link.click();
-  });
-});
