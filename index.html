@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Certificate Generator</title>
+  <title>Friday Thank You Generator</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Certificate Generator</h1>
+    <h1>Friday Thank You Generator</h1>
     <form id="certificateForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" placeholder="Enter your name" required>
+      <label for="name">Who do you want to thank?:</label>
+      <input type="text" id="name" placeholder="Enter their name" required>
       
-      <label for="message">Message:</label>
+      <label for="message">Why do you want to thank them?:</label>
       <textarea id="message" placeholder="Enter your message" required></textarea>
       
-      <button type="submit">Generate Certificate</button>
+      <button type="submit">Generate Thank You</button>
     </form>
 
     <div id="certificate" class="certificate hidden">
-      <h2>Certificate of Achievement</h2>
+      <h2>Certificate of Thanks</h2>
       <p id="certificateName"></p>
       <p id="certificateMessage"></p>
       <div class="logo-container">
