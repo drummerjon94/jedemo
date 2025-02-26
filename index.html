@@ -1,1 +1,34 @@
-jonny test site
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Certificate Generator</h1>
+    <form id="certificateForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="Enter your message" required></textarea>
+      
+      <button type="submit">Generate Certificate</button>
+    </form>
+
+    <div id="certificate" class="certificate hidden">
+      <h2>Certificate of Achievement</h2>
+      <p id="certificateName"></p>
+      <p id="certificateMessage"></p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Audi-Logo_2016.svg" alt="Audi Logo" class="logo">
+      <button id="downloadBtn">Download as JPG</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
