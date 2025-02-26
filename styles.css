@@ -86,3 +86,9 @@ button:hover {
 .hidden {
   display: none;
 }
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
